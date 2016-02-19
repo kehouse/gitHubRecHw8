@@ -1,0 +1,197 @@
+body {
+    font: 13px / 1.4 Helvetica, arial, sans-serif;
+    color: #333;
+  }
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.octicon-mark-github:before { content: '\f00a'} /*  */
+
+header nav span {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+}
+
+header form {
+  display: inline-block;
+  width: 360px;
+  margin-left: 5%;
+}
+
+header input[type="text"] {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+header ul {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  color: black;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+/*profile information*/
+
+aside {
+  padding-top: 2%;
+  width: 29%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+img {
+    width: 230px;
+    border-radius: 5px;
+}
+
+.profilePic {
+  margin-left: 115px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profilePic h1 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profilePic h4 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+.octicon-clock:before { content: '\f046'} /*  */
+
+.createdDate {
+  margin-left: 115px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.followersBar {
+  margin-left: 150px;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+.followersBar h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 35px;
+  color: #4078c0;
+}
+
+.followersBar p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.followingBar {
+  margin-left: 70px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.followingBar h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 35px;
+  color: #4078c0;
+}
+
+.followingBar p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.organizations {
+  margin-left: 115px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.tab {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*nav {
+  display: none;
+}*/
+
+.active {
+  /*display: none;*/
+  border: 5px solid black;
+}
+
+/*main content tab*/
+
+section {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1%;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+
+section ul {
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+
+section ul li {
+  list-style-type: none;
+  display: inline-block;
+  color: black;
+}
+
+section ul li h3 {
+  display: inline-block;
+  margin: 0;
+  padding-left: 0;
+}
+
+.octicon-diff-added:before { content: '\f06b'} /*  */
+.octicon-repo:before { content: '\f001'} /*  */
+.octicon-rss:before { content: '\f034'} /*  */
