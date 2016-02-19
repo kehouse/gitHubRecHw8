@@ -157,16 +157,12 @@ img {
   vertical-align: top;
 }
 
-/*nav {
-  display: none;
-}*/
+/*main content tab*/
 
-.active {
-  /*display: none;*/
+.inactive {
+  display: none;
   border: 5px solid black;
 }
-
-/*main content tab*/
 
 section {
   width: 70%;
@@ -195,3 +191,21 @@ section ul li h3 {
 .octicon-diff-added:before { content: '\f06b'} /*  */
 .octicon-repo:before { content: '\f001'} /*  */
 .octicon-rss:before { content: '\f034'} /*  */
+
+.repos {
+  border-top: 1px solid #e5e5e5;
+  margin-left: 20px;
+}
+
+.repos h6 {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 13px;
+}
+
+.repos h2 {
+  color: #4078c0;
+  margin-bottom: 0px;
+  font-size: 20px;
+}

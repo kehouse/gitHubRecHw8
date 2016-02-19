@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Git Hub</title>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
-  </head>
-  <body>
-
+    <link charset="utf-8" href=
+    "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css"
+    media="screen" rel="stylesheet" title="no title">
+    <link charset="utf-8" href="main.css" media="screen" rel="stylesheet"
+    title="no title">
+    <link href="bower_components/octicons/octicons/octicons.css" rel=
+    "stylesheet">
+</head>
+<body>
     <header>
-         <nav>
-           <span class="mega-octicon octicon-mark-github"></span>
-          <form class="">
-          <input type="text" name="Search GitHub" placeholder="Search GitHub">
-         </form>
-           <ul>
-             <li><strong>Pull requests</strong></li>
-             <li><strong>Issues</strong></li>
-             <li><strong>Gist</strong></li>
-           </ul>
-         </nav>
-       </header>
-       <div id="blogs">
-
-         <aside class="add-post">
-          <div class="profilePic"></div>
-          <div class="createdDate"></div>
-          <div class="followersBar"></div>
-          <div class="followingBar"></div>
-          <div class="organizations"></div>
-         </aside>
-
-         <section>
-           <nav>
-           <ul>
-             <li><a rel="contributions" class="contributionsLink" href=""><span class="octicon octicon-diff-added"></span><h3>Contributions</h3></li>
-             <li><a rel="repositories" class="repositoriesLink" href=""><span class="octicon octicon-repo"></span><h3>Repositories</h3></li>
-             <li><a rel="publicActivity" class="publicActivityLink" href=""><span class="octicon octicon-rss"></span><h3>Public activity</h3></li>
-           </ul>
-         </nav>
-         </section>
-
-       </div>
-
-       </div>
-
-       <footer>
-
-       </footer>
-
-    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
-    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
-    <script src="bower_components/moment/moment.js" charset="utf-8"></script>
-    <script src="events.js" charset="utf-8"></script>
-    <script src="repos.js" charset="utf-8"></script>
-    <script src="github.js" charset="utf-8"></script>
-    <script src="user.js" charset="utf-8"></script>
-    <script src="main.js" charset="utf-8"></script>
-  </body>
+        <nav>
+            <span class="mega-octicon octicon-mark-github"></span>
+            <form class="">
+                <input name="Search GitHub" placeholder="Search GitHub" type=
+                "text">
+            </form>
+            <ul>
+                <li><strong>Pull requests</strong></li>
+                <li><strong>Issues</strong></li>
+                <li><strong>Gist</strong></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="add-post">
+        <div class="profilePic"></div>
+        <div class="createdDate"></div>
+        <div class="followersBar"></div>
+        <div class="followingBar"></div>
+        <div class="organizations"></div>
+    </aside>
+    <section>
+        <nav class="tabNav">
+            <ul>
+                <li>
+                    <a href="" rel="contributions"><span class=
+                    "octicon octicon-diff-added"></span>Contributions</a>
+                </li>
+                <li>
+                    <a href="" rel="repos"><span class=
+                    "octicon octicon-repo"></span>Repositories</a>
+                </li>
+                <li>
+                    <a href="" rel="publicAct"><span class=
+                    "octicon octicon-rss"></span>Public activity</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section class="repos"></section>
+            <section class="contributions inactive"></section>
+            <section class="publicAct inactive"></section>
+        </div>
+    </section>
+    <footer></footer>
+    <script charset="utf-8" src="bower_components/underscore/underscore.js">
+    </script>
+    <script charset="utf-8" src="bower_components/jquery/dist/jquery.js">
+    </script>
+    <script charset="utf-8" src="bower_components/moment/moment.js">
+    </script>
+    <script charset="utf-8" src="events.js">
+    </script>
+    <script charset="utf-8" src="repos.js">
+    </script>
+    <script charset="utf-8" src="github.js">
+    </script>
+    <script charset="utf-8" src="user.js">
+    </script>
+    <script charset="utf-8" src="main.js">
+    </script>
+</body>
 </html>

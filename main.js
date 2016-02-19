@@ -31,57 +31,31 @@ $(document).ready(function(){
 
   // Nav Bar Main Section
 
-  var navBarMain = $('li').find('a');
-  navBarMain.click(function(event){
-    event.preventDefault();
-    var selectedPage = "." + $(this).attr('rel');
+var navItem = $('li').find('a');
+navItem.click(function(event){
+  event.preventDefault();
+  var selectedPage = "." + $(this).attr('rel');
 
-    $(selectedPage).siblings('nav').removeClass('active');
-    $(selectedPage).addClass('active');
-  });
+  $(selectedPage).siblings('section').addClass('inactive');
+  $(selectedPage).removeClass('inactive');
+});
 
 // Main Section Blog Information
 
-// var reposPost = "";
-// repositories.forEach(function(element, idx){
-//   reposPost +=
-//     "<h1>"
-//     + repos.name
-//     + "</h1>"
-//     + "<h3>"
-//     + repos.updated_at
-//     + "</h3>"
-// });
+  var reposNames = "";
 
-  var gitHub = repos.map(function(post){
-    return {
-      title: post.name,
-      date: post.updated_at
-    }
-  });
+  repos.forEach(function (element, idx){
+    reposNames +=
+    "<h2>"
+    + element.name
+    + "</h2>"
+    + "<h6>"
+    + "Updated at"
+    + " "
+    + moment(element.updated_at).startOf('day').fromNow()
+    + "</h6>";
+  })
 
-  appendStrToElement(constructReposHtml(),$('section'));
+  $('.repos').append(reposNames);
 
-  function getReposPosts(existingReposPosts) {
-    return existingReposPosts;
-  }
-
-  function constructReposHtml() {
-    var posts = getReposPosts(gitHub);
-    var giantStr = "";
-    giantStr = posts.map(createReposPostStr);
-    return giantStr;
-  }
-
-  function createReposPostStr(post,idx) {
-    var postsHtmlStr = "";
-    postsHtmlStr += "<ul><li><h3>" + post.title + "</h3></li>";
-    postsHtmlStr += "<li><h6>" + post.date + "</h6></li>";
-    postsHtmlStr += "</ul>"
-    return postsHtmlStr;
-  }
-
-  function appendStrToElement(htmlStr, $element) {
-    return $element.append(htmlStr);
-  };
-})
+});
